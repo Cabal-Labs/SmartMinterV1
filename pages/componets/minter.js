@@ -1,9 +1,9 @@
 import React, {useState, useEffect, useRef} from "react";
 import styles from './../../styles/smart-minter1.module.css'
-import FirstStage from "./stages/firstStage";
-import SecondStage from "./stages/secondStage";
-import InformationStage from "./stages/informationStage";
-import ThirdState from "./stages/thirdStage";
+import FirstStage from "./firstStage";
+import SecondStage from "./secondStage";
+import InformationStage from "./informationStage";
+import ThirdState from "./thirdStage";
 import RingLoader from "react-spinners/RingLoader";
 import Footer from "./footer";
 import LinearProgress from '@mui/material/LinearProgress';

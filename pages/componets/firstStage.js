@@ -1,9 +1,9 @@
 import React, {useEffect, useState,useRef} from "react";
-import styles from './../../../styles/smart-minter1.module.css'
+import styles from './../../styles/smart-minter1.module.css'
 import {ethers} from "ethers"
 import axios from 'axios'
-import getInputN from "../../../Helpers/Compile";
-import getInputR from "../../../Helpers/Compile";
+import getInputN from "../../Helpers/Compile";
+import getInputR from "../../Helpers/Compile";
 
 
 export default function FirstStage({  setLoading,cName, setCName, setStageNumber, images, setImages, contractAdd, setContractAdd, abi, setAbi, setContractDeployed, contractDeployed}) {

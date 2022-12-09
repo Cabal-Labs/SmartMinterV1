@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-import styles from './../../../styles/thirdStage.module.css'
+import styles from './../../styles/thirdStage.module.css'
 
 export default function ThirdState({contractAdd, cName}) {
     return(

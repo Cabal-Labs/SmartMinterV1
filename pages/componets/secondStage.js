@@ -1,8 +1,8 @@
 import React, {useState, useEffect, use} from "react";
-import styles from './../../../styles/smart-minter2.module.css'
+import styles from './../../styles/smart-minter2.module.css'
 import {ethers} from "ethers"
 import { NFTStorage, File } from "nft.storage";
-import ImagesC from "../imagesC";
+import ImagesC from "./imagesC";
 
 
 export default function SecondStage({ mintPercent, setMintPercent,setLoading,abi, contractAdd, setStageNumber, stageNumber ,setContractDeployed, setLastStage, setAlreadySet,alreadySet,counter, setCounter,setMainImages,mainImages,handleImages,nft,setNft,images, setImages, setInfoNFT, infoNFT, setReadyForInfo}) {
