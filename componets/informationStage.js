@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import styles from '../../styles/informationStage.module.css'
+import styles from '../styles/informationStage.module.css'
 
 export default function InformationStage({setStageNumber, stageNumber, handleImages,infoNFT, nft, setNft,setReadyForInfo}) {
     const[attributes, setAttributes] = useState([{value:"",type:""}])

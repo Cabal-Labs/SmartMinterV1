@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import styles from './../../styles/smart-minter1.module.css'
+import styles from './../styles/smart-minter1.module.css'
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import '@rainbow-me/rainbowkit/styles.css';
 import Link from 'next/link';

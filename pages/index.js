@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import styles from '../styles/smart-minter1.module.css'
-import NavBar from './componets/navBar'
-import Minter from './componets/minter'
-import Counter from './componets/counter'
+import NavBar from '../componets/navBar'
+import Minter from '../componets/minter'
+import Counter from '../componets/counter'
 import Head from 'next/head'
 
 

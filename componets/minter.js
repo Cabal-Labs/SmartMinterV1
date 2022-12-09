@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from "react";
-import styles from './../../styles/smart-minter1.module.css'
+import styles from './../styles/smart-minter1.module.css'
 import FirstStage from "./firstStage";
 import SecondStage from "./secondStage";
 import InformationStage from "./informationStage";

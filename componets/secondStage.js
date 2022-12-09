@@ -1,5 +1,5 @@
 import React, {useState, useEffect, use} from "react";
-import styles from './../../styles/smart-minter2.module.css'
+import styles from './../styles/smart-minter2.module.css'
 import {ethers} from "ethers"
 import { NFTStorage, File } from "nft.storage";
 import ImagesC from "./imagesC";

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-import styles from './../../styles/smart-minter2.module.css'
+import styles from './../styles/smart-minter2.module.css'
 export default function ImagesC({setStageNumber, stageNumber, setImages, images, mainImages, handleImages,counter, setCounter,nft,setNft,infoNFT,setInfoNFT, setIndex, setReadyForInfo}) {
     
     
