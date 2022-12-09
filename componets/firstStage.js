@@ -4,6 +4,7 @@ import {ethers} from "ethers"
 import axios from 'axios'
 import getInputN from "../Helpers/Compile";
 import getInputR from "../Helpers/Compile";
+import { useAccount, useConnect, useDisconnect } from 'wagmi'
 
 
 export default function FirstStage({  setLoading,cName, setCName, setStageNumber, images, setImages, contractAdd, setContractAdd, abi, setAbi, setContractDeployed, contractDeployed}) {
@@ -20,6 +21,7 @@ export default function FirstStage({  setLoading,cName, setCName, setStageNumber
     //const [compContract, setCompContract] = useState(null)
     const inputRef = useRef(null);
     const inputRoyalRef = useRef(null)
+    const { address, isConnected } = useAccount()
   
     
     function handleRoyalties(e) {
@@ -210,8 +212,8 @@ export default function FirstStage({  setLoading,cName, setCName, setStageNumber
               </div>
             </div>
             <div className={styles['minter-buttom']}>
-              <div onClick={(hasName && hasSymbol && hasRoyal && hasFiled) ? Deploy: null} className={(hasName && hasSymbol && hasRoyal && hasFiled) ? styles['buttom'] : styles['buttom-disabled'] }>
-                <span className={(hasName && hasSymbol && hasRoyal && hasFiled) ? styles['text12'] : styles['text12-disabled']}>
+              <div onClick={(hasName && hasSymbol && hasRoyal && hasFiled && isConnected) ? Deploy: null} className={(hasName && hasSymbol && hasRoyal && hasFiled && isConnected) ? styles['buttom'] : styles['buttom-disabled'] }>
+                <span className={(hasName && hasSymbol && hasRoyal && hasFiled && isConnected) ? styles['text12'] : styles['text12-disabled']}>
                   <span>Continue</span>
                 </span>
               </div>

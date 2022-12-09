@@ -3,10 +3,11 @@ import styles from './../styles/smart-minter2.module.css'
 import {ethers} from "ethers"
 import { NFTStorage, File } from "nft.storage";
 import ImagesC from "./imagesC";
+import { useAccount, useConnect, useDisconnect } from 'wagmi'
 
 
 export default function SecondStage({ mintPercent, setMintPercent,setLoading,abi, contractAdd, setStageNumber, stageNumber ,setContractDeployed, setLastStage, setAlreadySet,alreadySet,counter, setCounter,setMainImages,mainImages,handleImages,nft,setNft,images, setImages, setInfoNFT, infoNFT, setReadyForInfo}) {
-  
+  const { address, isConnected } = useAccount()
   const [allSet, setAllSet] = useState(false)
   useEffect(()=>{
     if(!alreadySet) {
@@ -88,7 +89,7 @@ export default function SecondStage({ mintPercent, setMintPercent,setLoading,abi
     
     await genMetadata();
     setLoading(false)
-    if(allSet ){
+    if(allSet && isConnected ){
       setContractDeployed(false)
       setLastStage(true)
       setStageNumber(3)
@@ -119,8 +120,8 @@ export default function SecondStage({ mintPercent, setMintPercent,setLoading,abi
             </div>
           </div>
         <div className={styles['minter-buttom']}>
-              <div onClick={ () => {end()}}  className={(allSet) ? styles['buttom'] : styles['buttom-disabled'] }>
-                <span className={(allSet) ? styles['text12'] : styles['text12-disabled']}>
+              <div onClick={ () => {end()}}  className={(allSet && isConnected) ? styles['buttom'] : styles['buttom-disabled'] }>
+                <span className={(allSet && isConnected) ? styles['text12'] : styles['text12-disabled']}>
                   <span>Continue</span>
                 </span>
               </div>
