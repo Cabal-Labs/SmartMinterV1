@@ -1,1 +1,1 @@
-# SmartMinterV1
+#SmartMinter

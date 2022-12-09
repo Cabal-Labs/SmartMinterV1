@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+.buttom {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: transparent;
+    flex-direction: column;
+  }
+  .main-sq {
+    width: 1049px;
+    height: 633px;
+    display: flex;
+    position: relative;
+    box-sizing: content-box;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: rgba(0, 42, 50, 1);
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 20px;
+    flex-direction: column;
+  }
+  .top {
+    width: 1048px;
+    height: 103px;
+    display: flex;
+    padding: 0 26px 0 0;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: transparent;
+    margin-bottom: 0px;
+    justify-content: flex-end;
+  }
+  .text {
+    color: rgba(0, 42, 50, 1);
+    height: auto;
+    font-size: 48px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 309px;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .group25 {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    padding: 0;
+    position: relative;
+    align-self: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0;
+    margin-right: 0;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: transparent;
+  }
+  .information1 {
+    top: 0px;
+    left: 0px;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .basic-info {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-bottom: 65px;
+    flex-direction: column;
+  }
+  .name {
+    width: 1049px;
+    height: 68px;
+    display: flex;
+    padding: 0 0 0 20px;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    margin-bottom: 0px;
+  }
+  .text2 {
+    color: rgb(0, 42, 50);
+    height: auto;
+    font-size: 36px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .address {
+    width: 1049px;
+    display: flex;
+    padding: 0 0 0 20px;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .text3 {
+    color: rgba(0, 42, 50, 1);
+    height: auto;
+    font-size: 24px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .share {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    align-self: stretch;
+    align-items: center;
+    border-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .frame12 {
+    width: 643px;
+    height: 291px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: rgba(0, 42, 50, 1);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 42, 50, 0.36000001430511475);
+  }
+  .eth-links {
+    width: 551px;
+    height: 89px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: #002a32;
+    border-style: solid;
+    margin-bottom: 11px;
+    justify-content: center;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+  }
+  .untitled-artwork2 {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    border-color: transparent;
+    margin-right: 52px;
+  }
+  .i-m-a-g-e9255429opensealogoicon1 {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    border-color: transparent;
+  }
+  .share1 {
+    width: 566px;
+    height: 43px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    margin-bottom: 11px;
+  }
+  .text5 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 24px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .share-links {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .facebook1 {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-color: transparent;
+    margin-right: 64px;
+  }
+  .twitter2 {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-color: transparent;
+    margin-right: 64px;
+  }
+  .instagram1 {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-color: transparent;
+  }

@@ -1,0 +1,515 @@
+.frame28 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+}
+.frame281 {
+  width: 1049px;
+  height: 633px;
+  display: flex;
+  position: relative;
+  box-sizing: content-box;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(0, 42, 50, 1);
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 20px;
+  flex-direction: column;
+}
+.top {
+  width: 1048px;
+  height: 103px;
+  display: flex;
+  padding: 0 26px 0 0;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-bottom: 1px;
+  justify-content: flex-end;
+}
+.text {
+  color: rgba(0, 42, 50, 1);
+  height: auto;
+  font-size: 48px;
+  align-self: auto;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Fira Code;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 309px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.group25 {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.information1 {
+  top: 0px;
+  left: 0px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  border-color: transparent;
+}
+.middle {
+  width: 100%;
+  height: 434px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-bottom: 1px;
+  flex-direction: column;
+  justify-content: center;
+}
+.images-sq {
+  width: 911px;
+  height: 206px;
+  display: flex;
+  padding: 1px 0 0 0;
+  position: relative;
+  flex-shrink: 0;
+  border-color: rgba(0, 42, 50, 1);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: rgba(0, 42, 50, 0.36000001430511475);
+  border-style: dashed;
+  animation: fadeAndGrow 1s ease-in-out forwards;
+}
+
+@keyframes fadeAndGrow {
+  0% {
+    width: 935px;
+    height: 206px;
+    transform: translateY(50%);
+  }
+
+  100% {
+    width: 911px;
+    height: 380px;
+    transform: translateY(0%);
+  }
+}
+.inner-sq {
+  width: 907px;
+  height: 348px;
+  display: flex;
+  padding: 56px 0 0 0;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  justify-content: center;
+  animation: fadeIN 2.5s ease-in forwards;
+}
+
+@keyframes fadeIN {
+  0%{opacity: 0%; }
+  100%{opacity: 100%;}
+}
+
+.parent-images {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  justify-content: center;
+}
+.leftarrow2 {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  border-color: transparent;
+  margin-right: 38px;
+  left: 20px
+}
+.images {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  margin-right: var(--dl-space-space-twounits);
+  justify-content: center;
+}
+.frame282 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 33px;
+  flex-direction: column;
+}
+.i-m-a-g-e31 {
+  width: 210px;
+  height: 210px;
+  position: relative;
+  box-sizing: content-box;
+  border-color: rgba(0, 42, 50, 1);
+  border-style: solid;
+  border-width: 3px;
+  margin-bottom: 33px;
+}
+.group27 {
+  width: 25px;
+  height: 24px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.ellipse1 {
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 24px;
+  position: absolute;
+  border-color: transparent;
+}
+.check1 {
+  top: 4px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  justify-self: center;
+  border-color: transparent;
+}
+.frame283 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 33px;
+  flex-direction: column;
+}
+.i-m-a-g-e21 {
+  width: 210px;
+  height: 210px;
+  position: relative;
+  box-sizing: content-box;
+  border-color: rgba(0, 42, 50, 1);
+  border-style: solid;
+  border-width: 3px;
+  margin-bottom: 33px;
+}
+.imageState {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border-color: rgba(109, 69, 76, 1);
+  background-color:rgba(109, 69, 76, 1) ;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+  top: -40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageStateNo {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border-color: rgba(109, 69, 76, 1);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+  top: -40px;
+}
+.check-icon {
+  display: flex;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  position: center;
+  justify-self: center;
+
+}
+.frame284 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  flex-direction: column;
+}
+.i-m-a-g-e41 {
+  width: 210px;
+  height: 210px;
+  position: relative;
+  box-sizing: content-box;
+  border-color: rgba(0, 42, 50, 1);
+  border-style: solid;
+  border-width: 3px;
+  margin-bottom: 33px;
+}
+.picDone {
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  position: relative;
+  border-color: rgba(109, 69, 76, 1);
+  background-color: rgba(109, 69, 76, 1);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picNoDone{
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  position: relative;
+  border-color: rgba(109, 69, 76, 1);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+}
+.rightarrow1 {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  border-color: transparent;
+  right: 20px;
+}
+.down {
+  width: 1051px;
+  height: 96px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+}
+.group26 {
+  width: 222px;
+  height: 50px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.rectangle11 {
+  top: 0px;
+  left: 0px;
+  width: 222px;
+  height: 50px;
+  position: absolute;
+}
+.text2 {
+  top: 9px;
+  left: 53px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  opacity: 0.50;
+  position: absolute;
+  font-size: 24px;
+  align-self: auto;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Fira Code;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+  .minter-buttom {
+    width: 1049px;
+    height: 96px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .buttom-disabled {
+    width: 222px;
+    height: 50px;
+    display: flex;
+    padding: 0;
+    position: relative;
+    align-self: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1.5spx;
+    margin-right: 0;
+    border-radius: 10px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-color: rgba(0, 42, 50, 1);
+    background-color: rgba(109, 69, 76, 0.5);
+    cursor: pointer;
+  }
+
+  .text12-disabled {
+    top: 9px;
+    left: 53px;
+    color: rgba(255, 255, 255, 0.5);
+    height: auto;
+    position: absolute;
+    font-size: 24px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+ .deleteImage{
+  width: 25px;
+  height: 25px;
+  position:relative;
+  align-self: flex-end;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color:rgba(109, 69, 76, 1) ;
+  border-radius: 50%;
+  top: -245px;
+  right: 5px;
+  color: rgba(220, 220, 220, 1);
+  cursor: pointer;
+ }
+
+ .buttom {
+  width: 222px;
+  height: 50px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1.5spx;
+  margin-right: 0;
+  border-radius: 10px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-color: rgba(0, 42, 50, 1);
+  background-color: rgba(109, 69, 76, 1);
+  cursor: pointer;
+  
+}
+
+.text12 {
+  top: 9px;
+  left: 53px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  align-self: auto;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  
+}
+.text12-disabled {
+  top: 9px;
+  left: 53px;
+  color: rgba(255, 255, 255, 0.5);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  align-self: auto;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  
+}
+
+.xButton{
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  color:rgba(255, 255, 255, 1);
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  position: center;
+}
