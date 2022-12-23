@@ -25,6 +25,7 @@ export default function Minter() {
   const [cName, setCName] = useState(null)
   const [loading,setLoading] = useState(false)
   const [mintPercent, setMintPercent] = useState(0)
+  const [accepted, setAccepted] = useState(false)
 
   useEffect(() => {
     handleImages();
@@ -69,6 +70,23 @@ export default function Minter() {
     )
   }
 
+  const Disclaimer = () => {
+
+    return(
+    <div className={styles['disclaimer']}>
+      <div className={styles['disclaimer-msg']}>
+      Welcome to the SmartMinter platform! As a beta platform, there may be some bugs or issues that have not yet been addressed. However, the development team is dedicated to providing the best experience possible and is available to offer support and assistance if you encounter any problems while using the platform.
+      We recomend following the official tutorial <a href="https://blog.caballabs.com/your-nft-collection-in-3-simple-steps-final-guide-4ce29580ae3e" target="_blank" rel="noopener noreferrer"> <div style={{marginTop:"10px"}} className={styles['webLink']} >Here</div></a>
+      <div className={styles['signature']}>
+        <div onClick={() => {setAccepted(true)}} className={styles['disclaimer-button']}>I Understand</div>
+      </div>
+      </div>
+    </div>
+    )
+  }
+
+
+
     return(
         <div className={styles['parent-minter']}>
         <div className={styles['main-minter']}>
@@ -78,13 +96,20 @@ export default function Minter() {
                 <span>SmartMinter</span>
               </span>
               <div className={styles['information-button']}>
-                <img
-                  src="/Assets/information.png"
-                  alt="information12482"
-                  className={styles['information-bu']}
-                />
+                <a
+                href="https://blog.caballabs.com/your-nft-collection-in-3-simple-steps-final-guide-4ce29580ae3e"
+                target="_blank" 
+                rel="noopener noreferrer"
+                >
+                  <img
+                    src="/Assets/information.png"
+                    alt="information12482"
+                    className={styles['information-bu']}
+                  />
+                </a>
               </div>
             </div>
+            {accepted ? null : <Disclaimer/> }
             {(loading) ? <Spinner/> : null}
             {(stageNumber == 0)? 
               <FirstStage 
