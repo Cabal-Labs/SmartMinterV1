@@ -12,6 +12,7 @@ import {
 } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
+import { Analytics } from '@vercel/analytics/react';
 
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.goerli],
@@ -46,6 +47,7 @@ function MyApp({ Component, pageProps }) {
     })}
     chains={chains}>
       <Component {...pageProps} />
+      <Analytics />
     </RainbowKitProvider>
   </WagmiConfig>
   )
