@@ -15,7 +15,7 @@ import { publicProvider } from 'wagmi/providers/public';
 import { Analytics } from '@vercel/analytics/react';
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.goerli],
+  [chain.mainnet, chain.goerli, chain.polygon, chain.polygonMumbai],
   [
     alchemyProvider({ apiKey: process.env.ALCHEMY }),
     publicProvider()
