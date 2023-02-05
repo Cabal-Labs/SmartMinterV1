@@ -1,4 +1,32 @@
+# .gitignore
+
+# Node-related
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Build artifacts
+.next/
+.nuxt/
+dist/
+
+# Environment files
 .env
-node_modules
+
+# macOS file metadata
 .DS_Store
-```
+
+# Editor metadata
+.idea/
+*.swp
+
+# Logs and database files
+logs/
+*.log
+*.sql
+*.sqlite
+
+# Miscellaneous
+.nyc_output/
+.vscode/
