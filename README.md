@@ -20,7 +20,7 @@ If you have any questions or need assistance, please contact us at [SmartMinter 
 We welcome and encourage contributions to SmartMinter. If you would like to contribute, please fork the repository and submit a pull request.
 
 ## License
-SmartMinter is licensed under the [MIT License](https://github.com/SmartMinterV1/LICENSE).
+SmartMinter is licensed under the [MIT License](https://github.com/Cabal-Labs/SmartMinterV1/blob/main/LICENSE).
 
 ## Cabal Labs
 SmartMinter is actively maintained by [Cabal Labs](https://caballabs.com/). Join our thriving community [here](https://discord.gg/qJ3FBSQQ8T) and be a part of shaping the future of Web3.
