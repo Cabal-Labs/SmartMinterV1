@@ -115,6 +115,8 @@
   border-width: 5px;
   border-radius: 20px;
   flex-direction: column;
+  margin-bottom: 5%;
+
 }
 .minter-top {
   width: 100%;
@@ -425,10 +427,12 @@
   justify-content: center;
   background-color: rgba(0, 42, 50, 0.3);
   cursor: pointer;
-  overflow: hidden;
-  overflow-y: scroll;
   overflow-x: hidden;
-  padding: 10px;
+  padding-top: 25px;
+}
+.drag-files::-webkit-scrollbar{
+ width: 0px;
+  background: transparent;
 }
 
 .drag-files-active {
@@ -789,11 +793,77 @@
   background-color: rgba(217, 217, 217, 0.35);
 }
 
-.ButtomRights{
-  margin-top: 60px;
+.Mobile {
+  position: fixed;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(217, 217, 217, 0.35);
+}
+
+.mobile-msg{
+  max-width: 75%;
+  max-height: 75%;
+  color: rgba(0, 42, 50, 1);
+  background-color: rgba(217, 217, 217, 0.7);
+  padding: 25px;
+  border-color: rgba(0, 42, 50, 1);
+  border-width: 2px;
+  border-radius: 8px;
+  border-style: solid;
+  font-size: medium;
+  font-weight: 500;
+  font-family: 'Fira Code', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   
+}
+.mobile-msg h2 {
+  font-weight: 600;
+  margin-bottom: 0px;
+  width: fit-content;
+  
+  overflow: hidden;
+}
+.mobile-msg p{
+  font-weight: 600;
+  margin-bottom: 10px;
+  width: fit-content;
+  font-size: 16px ;
+}
+.images img {
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  margin: 7px;
+}
+
+.mobile-footer{
+  position: absolute;
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  padding: 8px;
+  border-color: rgba(0, 42, 50, 0.793);;
+  border-style: solid;
+  border-top-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  justify-content: center;
+  bottom: 10px; 
+  color: rgba(0, 42, 50, 0.793);
+}
+.ButtomRights{
+  position: relative;
+  width: 100%;
+
   padding-bottom: 50px;
   border-color: rgba(0, 42, 50, 0.793);;
   border-style: solid;
