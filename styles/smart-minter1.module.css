@@ -837,13 +837,35 @@
   width: fit-content;
   font-size: 16px ;
 }
-.images img {
-  width: 44px;
-  height: 44px;
+.images{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  margin: 7px;
+  margin-top: 10px;
+}
+.images img {
+  overflow: hidden;
+  margin: 6px;
 }
 
+.dicord{
+  width: auto;
+  height: 52px;
+}
+.youtube{
+  width: auto;
+  height: 45px;
+}
+.twitter{
+  width: auto;
+  height: 45px;
+}
+.tiktok{
+  width: auto;
+  height: 37px;
+}
 .mobile-footer{
   position: absolute;
   display: flex;
