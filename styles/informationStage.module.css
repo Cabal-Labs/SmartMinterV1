@@ -11,7 +11,7 @@
     background-color: rgba(217, 217, 217, 1);
   }
   .top-div {
-    width: 100%;
+    width: 100%; 
     height: 196px;
     display: flex;
     padding: 10px;
@@ -73,56 +73,28 @@
     margin-bottom: 0;
     text-decoration: none;
   }
-  .information-button {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    padding: 0;
-    position: relative;
-    align-self: auto;
-    box-sizing: border-box;
-    align-items: flex-start;
-    flex-shrink: 1;
-    border-color: transparent;
-    border-style: none;
-    border-width: 0;
-    margin-right: 0;
-    border-radius: 0px 0px 0px 0px;
-    margin-bottom: 0;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: transparent;
-  }
-  .information1 {
-    top: 0px;
-    left: 0px;
-    width: 44px;
-    height: 44px;
-    position: absolute;
-    border-color: transparent;
-  }
+
+  
   .information-div {
-    width: 934px;
-    height: 473px;
     display: flex;
     padding: 30px 20px 0 30px;
     align-items: center;
-    flex-shrink: 0;
     border-color: rgba(0, 42, 50, 1);
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
     flex-direction: column;
     background-color: rgba(0, 42, 50, 0.36);
+    box-shadow: -5px 4px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(37px);
+    
   }
   .basic-info-div {
     width: 100%;
-    height: 207px;
+    height: 100%;
     display: flex;
     position: relative;
     align-items: flex-start;
-    flex-shrink: 0;
-    border-color: transparent;
     margin-bottom: 10px;
   }
   .i-m-a-g-e41 {
@@ -170,23 +142,17 @@
     border-left-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 1px;
-  }
-  .text01 {
     color: rgba(0, 42, 50, 1);
-    width: 87px;
-    height: auto;
     font-size: 36px;
-    align-self: auto;
     font-style: SemiBold;
     text-align: left;
     font-family: 'Fira Code', monospace;
     font-weight: 600;
     line-height: normal;
     font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
     text-decoration: none;
   }
+ 
   .description-title {
     color: rgb(0, 42, 50);
     width: 633px;
@@ -268,7 +234,6 @@
     border-color: rgba(0, 42, 50, 1);
     border-style: solid;
     border-width: 100%;
-    margin-bottom: 10px;
     flex-direction: column;
     border-top-width: 0px;
     border-left-width: 0px;
@@ -309,16 +274,26 @@
   }
   .atributtes-grid {
     width: 100%;
-    height: 106.02127838134766px;
+    height: 115px;
     display: flex;
     position: relative;
     align-items: flex-start;
-    flex-shrink: 0;
     border-color: transparent;
     flex-direction: column;
     flex-wrap: wrap;
     overflow-x: scroll;
     justify-content: left;
+    padding: 3px;
+  }
+  .atributtes-grid::-webkit-scrollbar {
+    height: 7px;
+    border-radius: 4px;
+    background: rgba(0, 42, 50, 0.492);
+    
+  }
+  .atributtes-grid::-webkit-scrollbar-thumb {
+    background: rgba(0, 42, 50, 0.492);
+    border-radius: 7px;
   }
   .atributte {
     display: flex;
@@ -326,6 +301,11 @@
     align-items: flex-start;
     margin-bottom: 14px;
     margin-right: 20px;
+    border-color: rgba(0, 42, 50, 1);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    padding: 6px;
   }
   .type-input {
     width: 74px;
@@ -562,6 +542,35 @@
     border-color: rgba(0, 42, 50, 1);
     background-color: rgba(109, 69, 76, 1);
     cursor: pointer;
+    box-shadow: -5px 4px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(37px);
+    transition: 500ms;
+    animation: back 0.3s ease-out backwards;
+  }
+  .done-button:hover{
+    background-color: rgba(109, 69, 76, 0.8);
+    animation: grow 0.3s ease-out forwards;
+  }
+  
+  .done-button:active{
+    background-color: rgba(109, 69, 76, 0.4);
+  }
+  
+  @keyframes grow { 
+    0% { 
+      transform: scale(1); 
+    } 
+    100% { 
+      transform: scale(1.03); 
+    } 
+  }
+  @keyframes back {
+  0% { 
+    transform: scale(1.03); 
+  } 
+  100% { 
+    transform: scale(1); 
+  } 
   }
   .done-buttonDis {
     width: 132px;
@@ -581,6 +590,8 @@
     border-color: rgba(0, 42, 50, 1);
     background-color: rgba(109, 69, 76, 0.5);
     cursor: pointer;
+    box-shadow: -4px 3px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(37px);
   }
 
   .rectangle11 {
@@ -663,4 +674,26 @@
   }
 
 
-  
+  .deleteAtt{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color:rgba(109, 69, 76, 1) ;
+    border-radius: 50%;
+    color: rgba(220, 220, 220, 1);
+    cursor: pointer;
+    align-items: center;
+    justify-self: end;
+    justify-content: center;
+    display: flex;
+    transition: 500ms;
+    right: -5px;
+    top: -5px;  
+    color:rgba(255, 255, 255, 1);
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+   }
+
+   .deleteAtt:hover{
+    background-color:rgba(109, 69, 76, 0.8) ;
+  }

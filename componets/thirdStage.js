@@ -9,8 +9,6 @@ import {
 
 export default function ThirdState({contractAdd, cName}) {
 
-  const { chain, chains } = useNetwork()
-
   
   return(
   <div>

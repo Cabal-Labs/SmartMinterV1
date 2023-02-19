@@ -15,7 +15,9 @@ export default function ImagesC({setStageNumber, stageNumber, setImages, images,
         if (index >=0 && nft.length > 1) {
           setNft((nft) => nft.filter((_, _index) => _index !== index));
           setImages((images) => images.filter((_, _index) => _index !== index))
-
+          handleImages();
+        }else{
+            console.log("no se puede")
         }
     }
  
@@ -39,15 +41,16 @@ export default function ImagesC({setStageNumber, stageNumber, setImages, images,
                     {
                     mainImages.map((_nft,index)=> (
                         <div key={index} className={styles['frame282']}>
-                            
-                            <img
-                            alt="IMAGE312253"
-                            src={URL.createObjectURL(_nft.image)}
-                            key={index}
-                            className={styles['i-m-a-g-e31']}
-                            onClick={()=>{ (_nft.filled) ? null : goToInformation(_nft.id);}}
-                            />
-                            <div onClick={() => {deleteImage(_nft.id)}} className={styles['deleteImage']}><p className={styles['xButton']}>x</p></div>
+                            <div className={styles['imageBox']} >
+                                <div onClick={() => {deleteImage(_nft.id)}} className={styles['deleteImage']}><p className={styles['xButton']}>x</p></div>
+                                <img
+                                alt="IMAGE312253"
+                                src={URL.createObjectURL(_nft.image)}
+                                key={index}
+                                className={styles['i-m-a-g-e31']}
+                                onClick={()=>{ goToInformation(_nft.id);}}
+                                />
+                            </div>
                             {( _nft.filled) ? 
                             <div className={styles['imageState']}> 
                             <img

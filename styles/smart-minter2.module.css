@@ -49,34 +49,8 @@
   margin-bottom: 0;
   text-decoration: none;
 }
-.group25 {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  padding: 0;
-  position: relative;
-  align-self: auto;
-  box-sizing: border-box;
-  align-items: flex-start;
-  flex-shrink: 1;
-  border-color: transparent;
-  border-style: none;
-  border-width: 0;
-  margin-right: 0;
-  border-radius: 0px 0px 0px 0px;
-  margin-bottom: 0;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: transparent;
-}
-.information1 {
-  top: 0px;
-  left: 0px;
-  width: 44px;
-  height: 44px;
-  position: absolute;
-  border-color: transparent;
-}
+
+
 .middle {
   width: 100%;
   height: 434px;
@@ -170,16 +144,22 @@
   border-color: transparent;
   margin-right: 33px;
   flex-direction: column;
+  cursor: pointer;
 }
 .i-m-a-g-e31 {
   width: 210px;
   height: 210px;
-  position: relative;
-  box-sizing: content-box;
+}
+.imageBox{
   border-color: rgba(0, 42, 50, 1);
   border-style: solid;
-  border-width: 3px;
-  margin-bottom: 33px;
+  border-width: 100%;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 15px;
 }
 .group27 {
   width: 25px;
@@ -245,7 +225,6 @@
   border-style: solid;
   border-width: 3px;
   border-radius: 50%;
-  top: -40px;
   align-items: center;
   justify-content: center;
 }
@@ -258,7 +237,8 @@
   border-style: solid;
   border-width: 3px;
   border-radius: 50%;
-  top: -40px;
+  align-items: center;
+  justify-content: center;
 }
 .check-icon {
   display: flex;
@@ -386,6 +366,62 @@
     justify-content: center;
   }
 
+  .buttom {
+    width: 222px;
+    height: 50px;
+    display: flex;
+    padding: 0;
+    position: relative;
+    align-self: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1.5px;
+    margin-right: 0;
+    border-radius: 10px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-color: rgba(0, 42, 50, 1);
+    background-color: rgba(109, 69, 76, 1);
+    cursor: pointer;
+    box-shadow: -5px 4px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(37px);
+    transition: 500ms;
+    animation: back 0.3s ease-out backwards;
+  }
+  .buttom:hover{
+    background-color: rgba(109, 69, 76, 0.8);
+    animation: grow 0.3s ease-out forwards;
+  }
+  
+  .buttom:active{
+    background-color: rgba(109, 69, 76, 0.4);
+  }
+  
+  @keyframes grow { 
+    0% { 
+      transform: scale(1); 
+    } 
+    100% { 
+      transform: scale(1.03); 
+    } 
+  }
+  @keyframes back {
+  0% { 
+    transform: scale(1.03); 
+  } 
+  100% { 
+    transform: scale(1); 
+  } 
+  }
+  
+  
+  
+  
+  
   .buttom-disabled {
     width: 222px;
     height: 50px;
@@ -398,7 +434,7 @@
     flex-shrink: 1;
     border-color: transparent;
     border-style: solid;
-    border-width: 1.5spx;
+    border-width: 1.5px;
     margin-right: 0;
     border-radius: 10px;
     margin-bottom: 0;
@@ -407,6 +443,8 @@
     border-color: rgba(0, 42, 50, 1);
     background-color: rgba(109, 69, 76, 0.5);
     cursor: pointer;
+    box-shadow: -4px 3px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(37px);
   }
 
   .text12-disabled {
@@ -427,46 +465,24 @@
   }
 
  .deleteImage{
+  position: absolute;
   width: 25px;
   height: 25px;
-  position:relative;
-  align-self: flex-end;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
   background-color:rgba(109, 69, 76, 1) ;
   border-radius: 50%;
-  top: -245px;
-  right: 5px;
   color: rgba(220, 220, 220, 1);
   cursor: pointer;
- }
-
- .buttom {
-  width: 222px;
-  height: 50px;
+  align-items: center;
+  justify-self: end;
+  justify-content: center;
   display: flex;
-  padding: 0;
-  position: relative;
-  align-self: auto;
-  box-sizing: border-box;
-  align-items: flex-start;
-  flex-shrink: 1;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 1.5spx;
-  margin-right: 0;
-  border-radius: 10px;
-  margin-bottom: 0;
-  flex-direction: row;
-  justify-content: flex-start;
-  border-color: rgba(0, 42, 50, 1);
-  background-color: rgba(109, 69, 76, 1);
-  cursor: pointer;
-  
-}
-
+  transition: 500ms;
+  right: 3%;
+  top: 2%;  
+ }
+  .deleteImage:hover{
+    background-color:rgba(109, 69, 76, 0.8) ;
+  }
 .text12 {
   top: 9px;
   left: 53px;
@@ -503,13 +519,7 @@
 }
 
 .xButton{
-  display: flex;
-  align-self: center;
-  justify-self: center;
-  justify-content: center;
-  align-items: center;
   color:rgba(255, 255, 255, 1);
   font-family: 'Fira Code', monospace;
   font-weight: 700;
-  position: center;
 }

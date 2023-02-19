@@ -90,11 +90,9 @@ export default function Minter() {
     return(
         <div className={styles['parent-minter']}>
         <div className={styles['main-minter']}>
-          <div>
-            <div className={styles['minter-top']}>
-              <span className={styles['text']}>
-                <span>SmartMinter</span>
-              </span>
+          
+            <div className={styles['minter-top']}>           
+              <span>SmartMinter</span>
               <div className={styles['information-button']}>
                 <a
                 href="https://blog.caballabs.com/your-nft-collection-in-3-simple-steps-final-guide-4ce29580ae3e"
@@ -110,6 +108,7 @@ export default function Minter() {
               </div>
             </div>
             {accepted ? null : <Disclaimer/> }
+            <div className={styles['stages']}>
             {(loading) ? <Spinner/> : null}
             {(stageNumber == 0)? 
               <FirstStage 
@@ -187,7 +186,7 @@ export default function Minter() {
             
              
           </div>
-        </div>
+          </div>
         <Footer/>
       </div>
     )
