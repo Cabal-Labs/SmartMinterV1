@@ -116,21 +116,21 @@ export default function FirstStage({  setLoading,cName, setCName, setStageNumber
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner()
         const factory = new ethers.ContractFactory(CompContract.CabalContract.abi, CompContract.CabalContract.evm.bytecode.object, signer )
-        try{
-          const contract = await factory.deploy({gasLimit: 5000000})
-          const a = await contract.deployTransaction.wait()
-          console.log(a)
-          console.log(contract)
-          console.log(`Deployment successful! Contract Address: ${contract.address}`)
+        //try{
+          //const contract = await factory.deploy({gasLimit: 5000000})
+          //const a = await contract.deployTransaction.wait()
+          //console.log(a)
+          //console.log(contract)
+          //console.log(`Deployment successful! Contract Address: ${contract.address}`)
           setLoading(false)
-          setAbi(CompContract.CabalContract.abi)
-          setContractAdd(contract.address)
+          //setAbi(CompContract.CabalContract.abi)
+          //setContractAdd(contract.address)
           setContractDeployed(true)
           setStageNumber(1)
-        } catch(e) {
-          setLoading(false)
-          console.log(e)
-        }
+       // } catch(e) {
+        //  setLoading(false)
+         // console.log(e)
+       // }
         
     }
 
@@ -138,7 +138,7 @@ export default function FirstStage({  setLoading,cName, setCName, setStageNumber
         <div className={(contractDeployed) ? styles['firstStageFade'] : styles['firstStage']}>
             <div className={styles['minter-text']}>
               <div className={styles['input-name']}>
-                <span className={styles['text02']}>
+                <span >
                 <input maxLength={15} placeholder='Collection Name' className={styles['inputName']} onChange={(e) => { setCName(e.target.value); (e.target.value.length != 0) ? setHasName(true): setHasName(false); }}/>
                 </span>
               </div>
@@ -170,7 +170,7 @@ export default function FirstStage({  setLoading,cName, setCName, setStageNumber
                       onChange={handleRoyalties}
                   />
                 </div>
-                <span className={styles['text08']}>
+                <span >
                   <span>Royalties</span>
                 </span>
               </div>
@@ -191,7 +191,7 @@ export default function FirstStage({  setLoading,cName, setCName, setStageNumber
                     images.map((images, index)=>(
                       <div className={styles['fileSq'] } onMouseEnter={() => setFileHovering(true) } onMouseLeave={() => setFileHovering(false)}>
                           <p className={styles['imageName']}>{images.name}</p>
-                          <button onClick={()=>{ deleteImage(index);}}className={styles['xButton']}><span>X</span></button>
+                          <div onClick={()=>{ deleteImage(index);}}className={styles['xButton']}><span>X</span></div>
                       </div>
                     ))
                   }
