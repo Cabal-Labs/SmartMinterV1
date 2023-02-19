@@ -87,13 +87,13 @@ export default function SecondStage({ mintPercent, setMintPercent,setLoading,abi
 
   async function end() {
     
-    //await genMetadata();
+    await genMetadata();
     setLoading(false)
-    //if(allSet && isConnected ){
+    if(allSet && isConnected ){
       setContractDeployed(false)
       setLastStage(true)
       setStageNumber(3)
-    //}
+    }
   }
  
     

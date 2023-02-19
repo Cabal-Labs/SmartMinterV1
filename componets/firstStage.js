@@ -18,7 +18,6 @@ export default function FirstStage({  setLoading,cName, setCName, setStageNumber
     const [hasFiled, setHasFiled] = useState(false)
     const [deployed, setDeployed] = useState(false)
     const [fileHovering, setFileHovering] = useState(false)
-    //const [compContract, setCompContract] = useState(null)
     const inputRef = useRef(null);
     const inputRoyalRef = useRef(null)
     const { address, isConnected } = useAccount()
@@ -116,21 +115,21 @@ export default function FirstStage({  setLoading,cName, setCName, setStageNumber
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner()
         const factory = new ethers.ContractFactory(CompContract.CabalContract.abi, CompContract.CabalContract.evm.bytecode.object, signer )
-        //try{
-          //const contract = await factory.deploy({gasLimit: 5000000})
-          //const a = await contract.deployTransaction.wait()
-          //console.log(a)
-          //console.log(contract)
-          //console.log(`Deployment successful! Contract Address: ${contract.address}`)
+        try{
+          const contract = await factory.deploy({gasLimit: 5000000})
+          const a = await contract.deployTransaction.wait()
+          console.log(a)
+          console.log(contract)
+          console.log(`Deployment successful! Contract Address: ${contract.address}`)
           setLoading(false)
-          //setAbi(CompContract.CabalContract.abi)
-          //setContractAdd(contract.address)
+          setAbi(CompContract.CabalContract.abi)
+          setContractAdd(contract.address)
           setContractDeployed(true)
           setStageNumber(1)
-       // } catch(e) {
-        //  setLoading(false)
-         // console.log(e)
-       // }
+        } catch(e) {
+          setLoading(false)
+          console.log(e)
+        }
         
     }
 
