@@ -49,6 +49,7 @@ export default function ImagesC({setStageNumber, stageNumber, setImages, images,
                                 key={index}
                                 className={styles['i-m-a-g-e31']}
                                 onClick={()=>{ goToInformation(_nft.id);}}
+                                
                                 />
                             </div>
                             {( _nft.filled) ? 

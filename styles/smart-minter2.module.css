@@ -149,6 +149,7 @@
 .i-m-a-g-e31 {
   width: 210px;
   height: 210px;
+  object-fit: cover;
 }
 .imageBox{
   border-color: rgba(0, 42, 50, 1);
