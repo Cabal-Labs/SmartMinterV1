@@ -5,17 +5,23 @@ import {
   darkTheme
 } from '@rainbow-me/rainbowkit';
 import {
-  chain,
   configureChains,
   createClient,
   WagmiConfig,
 } from 'wagmi';
+
+import {
+	mainnet,
+	polygon,
+  goerli,
+	polygonMumbai,
+} from "wagmi/chains";
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 import { Analytics } from '@vercel/analytics/react';
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.goerli, chain.polygon, chain.polygonMumbai],
+  [mainnet, goerli, polygon, polygonMumbai],
   [
     alchemyProvider({ apiKey: process.env.ALCHEMY }),
     publicProvider()

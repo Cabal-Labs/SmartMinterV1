@@ -2,8 +2,8 @@ import React, {useEffect, useState,useRef} from "react";
 import styles from './../styles/smart-minter1.module.css'
 import {ethers} from "ethers"
 import axios from 'axios'
-import getInputN from "../Helpers/Compile";
-import getInputR from "../Helpers/Compile";
+import {getInputN,getInputR }from "../lib/helpers/Compile";
+
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
 
 

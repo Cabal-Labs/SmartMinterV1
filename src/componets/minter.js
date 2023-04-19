@@ -69,15 +69,26 @@ export default function Minter() {
     
     )
   }
+  // position: fixed;
+  // top: 0%;
+  // left: 0%;
+  // z-index: 10;
+  // height: 100%;
+  // width: 100%;
+  // display: flex;
+  // flex-direction:column;
+  // justify-content: center;
+  // align-items: center;
+  // background-color: rgba(217, 217, 217, 0.35);
 
   const Disclaimer = () => {
 
     return(
-    <div className={styles['disclaimer']}>
-      <div className={styles['disclaimer-msg']}>
+    <div className="fixed top-0 left-0 z-10 flex flex-col items-center justify-center w-full h-full border-2 border-transparent bg-b-color-mobile">
+      <div className="w-[550px] text-smart-blue bg-b-color-0.7 p-6 mt-9 border-smart-blue rounded-md border-2 text-lg flex flex-col justify-center items-center">
       Welcome to the SmartMinter platform! As a beta platform, there may be some bugs or issues that have not yet been addressed. However, the development team is dedicated to providing the best experience possible and is available to offer support and assistance if you encounter any problems while using the platform.
       We recomend following the official tutorial <a href="https://blog.caballabs.com/your-nft-collection-in-3-simple-steps-final-guide-4ce29580ae3e" target="_blank" rel="noopener noreferrer"> <div style={{marginTop:"10px"}} className={styles['webLink']} >Here</div></a>
-      <div className={styles['signature']}>
+      <div className="">
         <div onClick={() => {setAccepted(true)}} className={styles['disclaimer-button']}>I Understand</div>
       </div>
       </div>
@@ -86,14 +97,13 @@ export default function Minter() {
   }
 
 
-
     return(
-        <div className={styles['parent-minter']}>
-        <div className={styles['main-minter']}>
+        <div className="w-full h-[739px] flex relative items-center flex-col">
+        <div className="w-[1049px] h-[633px] flex flex-col items-center p-4 relative border-[5px] border-solid rounded-[20px] mb-[5%] bg-[#D9D9D9] shadow-[10px] border-[rgba(0,42,50,1)] box-shadow-[-10px] backdrop-blur-[37px]">
           
-            <div className={styles['minter-top']}>           
+            <div className="fixed flex items-center justify-center w-full h-20 text-5xl font-semibold text-smart-blue">           
               <span>SmartMinter</span>
-              <div className={styles['information-button']}>
+              <div className="absolute top-0 flex flex-row items-center justify-center cursor-pointer right-6">
                 <a
                 href="https://blog.caballabs.com/your-nft-collection-in-3-simple-steps-final-guide-4ce29580ae3e"
                 target="_blank" 
@@ -102,13 +112,13 @@ export default function Minter() {
                   <img
                     src="/Assets/information.png"
                     alt="information12482"
-                    className={styles['information-bu']}
+                    className="border-none w-11 h-11"
                   />
                 </a>
               </div>
             </div>
             {accepted ? null : <Disclaimer/> }
-            <div className={styles['stages']}>
+            <div className="relative flex flex-col items-center justify-center w-full h-full mt-14">
             {(loading) ? <Spinner/> : null}
             {(stageNumber == 0)? 
               <FirstStage 
