@@ -7,6 +7,7 @@ import ThirdState from "./thirdStage";
 import RingLoader from "react-spinners/RingLoader";
 import Footer from "./footer";
 import LinearProgress from '@mui/material/LinearProgress';
+import Button from "./button";
 
 
 export default function Minter() {
@@ -44,7 +45,7 @@ export default function Minter() {
   const Spinner = () => {
 
     return(
-      <div className={styles['spinner']}>
+      <div className="">
           <RingLoader
             color="#002a32"
             cssOverride={{
@@ -69,27 +70,23 @@ export default function Minter() {
     
     )
   }
-  // position: fixed;
-  // top: 0%;
-  // left: 0%;
-  // z-index: 10;
-  // height: 100%;
-  // width: 100%;
-  // display: flex;
-  // flex-direction:column;
-  // justify-content: center;
-  // align-items: center;
-  // background-color: rgba(217, 217, 217, 0.35);
-
+  
   const Disclaimer = () => {
 
     return(
     <div className="fixed top-0 left-0 z-10 flex flex-col items-center justify-center w-full h-full border-2 border-transparent bg-b-color-mobile">
       <div className="w-[550px] text-smart-blue bg-b-color-0.7 p-6 mt-9 border-smart-blue rounded-md border-2 text-lg flex flex-col justify-center items-center">
-      Welcome to the SmartMinter platform! As a beta platform, there may be some bugs or issues that have not yet been addressed. However, the development team is dedicated to providing the best experience possible and is available to offer support and assistance if you encounter any problems while using the platform.
-      We recomend following the official tutorial <a href="https://blog.caballabs.com/your-nft-collection-in-3-simple-steps-final-guide-4ce29580ae3e" target="_blank" rel="noopener noreferrer"> <div style={{marginTop:"10px"}} className={styles['webLink']} >Here</div></a>
-      <div className="">
-        <div onClick={() => {setAccepted(true)}} className={styles['disclaimer-button']}>I Understand</div>
+      Welcome to the SmartMinter platform! As a beta platform, 
+      there may be some bugs or issues that have not yet been addressed. 
+      However, the development team is dedicated to providing the best experience possible and is available to offer support and assistance if you encounter any problems while using the platform.
+      We recomend following the official tutorial 
+      <a href="https://blog.caballabs.com/your-nft-collection-in-3-simple-steps-final-guide-4ce29580ae3e" target="_blank" rel="noopener noreferrer"> 
+        <div style={{marginTop:"10px"}} className="w-auto h-auto p-0 border-b-2 border-smart-blue" >
+          Here
+        </div>
+      </a>
+      <div>
+        <Button onClick={()=>setAccepted(true)} children="I Understand" />
       </div>
       </div>
     </div>
@@ -121,7 +118,7 @@ export default function Minter() {
             <div className="relative flex flex-col items-center justify-center w-full h-full mt-14">
             {(loading) ? <Spinner/> : null}
             {(stageNumber == 0)? 
-              <FirstStage 
+              <FirstStage sss
               contractAdd={contractAdd} 
               setContractAdd={setContractAdd}
               abi={abi}

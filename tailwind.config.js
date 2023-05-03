@@ -30,6 +30,10 @@ module.exports = {
         'b-color-0.7': 'rgba(217, 217, 217, 0.7)',
         'smart-blue': 'rgba(0, 42, 50, 1)',
         'smart-blue-hover': 'rgba(0, 42, 50, 0.7)',
+        'button-color' : 'rgba(109, 69, 76, 1)',
+        'button-color-hover' : 'rgba(109, 69, 76, 0.7)',
+        'button-color-active' : 'rgba(109, 69, 76, 0.4)',
+        'button-color-text' : 'rgba(217, 217, 217, 1)',
       }
 
     },
